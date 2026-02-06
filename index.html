@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protect Yourself from Keyloggers</title>
+    <!-- Link to our CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Protect Yourself from Keyloggers</h1>
+            <p>Learn what they are, how they work, and how to stay safe.</p>
+        </div>
+    </header>
+
+    <main class="container">
+        
+        <!-- Educational Section -->
+        <section class="info-grid">
+            <div class="card">
+                <h2>What is a Keylogger?</h2>
+                <p>A keylogger is a malicious program or device that records every keystroke you type on a computer or mobile device. This includes passwords, credit card numbers, and personal messages.</p>
+            </div>
+            
+            <div class="card">
+                <h2>Where are they found?</h2>
+                <p>They can be software hidden in email attachments, fake apps, or pirated games. They can also be physical devices plugged into public computers (like at libraries or internet cafes).</p>
+            </div>
+
+            <div class="card">
+                <h2>How to stay safe?</h2>
+                <ul>
+                    <li>Use a virtual keyboard for sensitive data.</li>
+                    <li>Enable 2-Factor Authentication (2FA).</li>
+                    <li>Check USB ports on public computers.</li>
+                    <li>Keep your antivirus updated.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Interactive Demo Section -->
+        <section class="demo-section">
+            <h2>Interactive Demo: How Keyloggers See Your Input</h2>
+            <p class="demo-desc">Type in the boxes below to see the difference between standard typing and what a hacker might see.</p>
+            
+            <div class="demo-container">
+                <!-- User Input Area -->
+                <div class="input-area">
+                    <div class="input-group">
+                        <label for="unsafe-input">1. Normal Field (Unsafe)</label>
+                        <input type="text" id="unsafe-input" placeholder="Type a 'password' here...">
+                        <small>Keyloggers can easily capture this.</small>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="safe-input">2. Protected Field (Simulation)</label>
+                        <input type="password" id="safe-input" placeholder="Type a 'password' here...">
+                        <small>Good security measures mask or encrypt this.</small>
+                    </div>
+                </div>
+
+                <!-- Hacker Console Area -->
+                <div class="output-area">
+                    <div class="console-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <span>Hacker_Console.exe</span>
+                    </div>
+                    <div class="console-window" id="console-output">
+                        <p class="log-line">Listening for keystrokes...</p>
+                        <!-- Dynamic content will appear here -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Created for educational purposes by [Your Name]. Stay Safe!</p>
+    </footer>
+
+    <!-- Link to our JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
